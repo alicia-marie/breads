@@ -19,3 +19,6 @@ app.use('/breads', breadsController)
 app.listen(PORT, () => {
   console.log('listening on port', PORT);
 })
+
+// MIDDLEWARE
+app.use(express.urlencoded({extended: true}))
